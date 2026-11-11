@@ -20,7 +20,7 @@ static void padeiro(void *arg1, void *arg2, void *arg3)
 	ARG_UNUSED(arg3);
 
 	while (1) {
-		k_msleep(1000);
+		k_msleep(500);
 
 		if (saldo_vitrine < CAPACIDADE_VITRINE) {
 			paes_produzidos++;
@@ -43,7 +43,7 @@ static void cliente(void *arg1, void *arg2, void *arg3)
 	ARG_UNUSED(arg3);
 
 	while (1) {
-		k_msleep(1500);
+		k_msleep(2000);
 
 		if (saldo_vitrine > 0) {
 			paes_consumidos++;
